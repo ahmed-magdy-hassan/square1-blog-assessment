@@ -15,7 +15,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        //$schedule->command('square1:import:posts')->hourly();
+        $schedule->command('square1:import:posts')->hourly();
     }
 
     /**

@@ -55,7 +55,7 @@ class BlogPost
     {
 
         $this->adminUserPostCreator = User::adminAuthor()->first();
-        if (!$this->adminUserPostCreator) throw new NoAdminUserPostCreatorException("No Admin Post Creator");
+        if (!$this->adminUserPostCreator) throw new NoAdminUserPostCreatorException("No Admin Post Creator, Please make sure the admin create Admin-Author user.");
         return $this;
     }
 
